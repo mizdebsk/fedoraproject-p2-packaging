@@ -18,6 +18,8 @@ XXX
 
 %prep
 %setup -q -n %{name}-%{commit}
+# Tests fail with: Gdk-ERROR **: error: XDG_RUNTIME_DIR not set in the environment.
+%pom_disable_module org.fedoraproject.p2.tests
 
 %build
 %mvn_build
