@@ -22,7 +22,7 @@ XXX
 %pom_disable_module org.fedoraproject.p2.tests
 
 %build
-%mvn_build
+%mvn_build -j
 
 %install
 %mvn_install
